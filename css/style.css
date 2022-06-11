@@ -1,3 +1,111 @@
+header{
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgba(0 0 0 / .1);
+    min-width: 100%;
+}
+
+.navbar a,
+.navbar {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar .menu_list{
+    display: none;
+
+}
+.navbar,
+.navbar .signup{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .signup{
+    width: 200px;
+}
+.navbar .signup .cart{
+    position: relative;
+}
+
+.navbar .signup .cart .img{
+    margin-top: 10px;
+}
+
+.navbar .signup .cart span{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 800;
+    top: -5px;
+    right: -10px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #036d77, #13a7b4, #13a7b4 );
+    padding: 2px 5px;
+}
+.navbar .signup .sign_in{
+    background-image: linear-gradient(to right, #036d77, #13a7b4, #13a7b4 );
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 40px;
+}
+
+@media (min-width: 1024px){
+    .navbar{
+        max-width: 1024px;
+    }
+    .navbar .hambuger_menu{
+        display: none;
+    }
+    .navbar .signup{
+        width: 150px;
+    }
+    .navbar .menu_list{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 40%;
+
+    }
+    .navbar .dropdown_list_item{
+        display: none;
+    }
+    .navbar .dropdown_list{
+        display: flex;
+
+    }
+}
+
+/*============================
+Hambuger Menu Display
+=============================*/
+
+.navbar .dropdown_list_item a{
+    position: relative;
+}
+
+.navbar .dropdown_list_item a::before{
+    content: url(../Assets/img/expand_less_black_24dp.svg);
+    position: absolute;
+    left: -50px;
+    
+}
+.navbar .dropdown_list_item p{
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 5px;
+
+}
+.open_nav .menu_list{
+    display: block;
+}
+
 .employee_directory{
     width: 90%;
     margin: 0 auto; 
